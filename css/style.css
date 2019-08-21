@@ -15,6 +15,7 @@ header {
 }
 
 .container {
+  box-sizing: border-box;
   background-color: #9e9696;
   position: absolute;
   margin-top: 20px;
@@ -27,13 +28,19 @@ header #branding {
 
 header li {
   display: inline;
-  opacity: 1;
+  padding: 0 20px 0 20px;
+}
+
+footer li {
+  display: inline;
   padding: 0 20px 0 20px;
 }
 
 header nav {
   float: right;
-  margin-top: 10px;
+  margin-top: 30px;
+  /* padding-top: 20px; */
+  /* TODO: Move nav item down */
 }
 
 header a {
@@ -41,6 +48,21 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+footer nav {
+  float: right;
+  background-color: #901f45;
+  margin-top: 10px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header .highlight,
@@ -76,7 +98,106 @@ header a:hover {
     display: block;
     text-align: left;
   }
+
   .header-right {
     float: none;
   }
+}
+
+.shop-now {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: #901f458f;
+  color: white;
+  border: 2px solid #901f45;
+  box-shadow: 0 8px 16px 0 rgba(144, 31, 69 0.2),
+    0 6px 20px 0 rgba(144, 31, 69 0.19);
+  border-radius: 12px;
+  font-size: 40px;
+  padding: 12px 28px;
+}
+
+.shop-now:hover {
+  background-color: #901f45;
+  color: white;
+}
+
+.affirmations {
+  overflow-x: auto;
+  padding-left: 15%;
+}
+
+#newsletter {
+  padding: 100px;
+  color: #ffffff;
+  background: #901f45;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 10px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 30px;
+  width: 250px;
+  padding-right: 10px;
+}
+
+#container2 {
+  background-color: #901f45;
+}
+
+.button_1 {
+  background-color: white;
+  color: #901f45;
+  border-radius: 12px;
+  font-size: 25px;
+  padding: 12px 20px;
+}
+
+footer {
+  background-color: #901f45;
+  color: white;
+}
+
+footer div {
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 20px;
+}
+
+.product th {
+  padding-top: 40px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.product button {
+  width: 50%;
+  height: 40px;
+  font-size: 17px;
+  background-color: #901f45;
+  color: white;
+  border-radius: 12px;
+  padding: 12px 20px;
+}
+
+.product img {
+  width: 400px;
+  height: 500px;
+}
+
+.product td {
+  padding: 0 15px 0 15px;
+  font-size: 19px;
+  vertical-align: center;
+  text-align: center;
 }
