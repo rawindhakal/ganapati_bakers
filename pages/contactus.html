@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ganapati Bakers</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -14,15 +14,15 @@
         <header class="bg-image">
             <div class="container">
                 <div id="branding">
-                    <img style="height: 70px; width: 200px;" src="assets/images/logo.png" alt="logo" />
+                    <img style="height: 70px; width: 200px;" src="../assets/images/logo.png" alt="logo" />
                 </div>
                 <nav>
                     <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Product</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Research</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li class="current"><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,6 +36,49 @@
             </section>
         </header>
     </section>
+    <section class="contactusContainer">
+        <div class="map">
+
+        </div>
+        <div class="contactusForm">
+            <form name="messageForm" onsubmit="validateForm()">
+                <p>First Name: <br>
+                    <input type="text" name="firstname">
+                    <p id=""></p>
+                </p>
+                <p>Last Name: <br>
+                    <input type="text" name="lastname">
+                </p>
+                <p>Gender: <br>
+                    <input type="radio" name="gender" value="male" checked>male
+                    <input type="radio" name="gender" value="female">female
+                </p>
+                <p>Message:
+                    <br>
+                    <textarea name="message" cols="60" rows="10" placeholder="Enter Message"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+
+        </div>
+    </section>
+    <script>
+        function validateForm() {
+            var fname = document.forms["messageForm"]["firstname"].value;
+            var lname = document.forms["messageForm"]["lastname"].value;
+            var gender = document.forms["messageForm"]["gender"].value;
+            var message = document.forms["messageForm"]["message"].value;
+            if (fname == "" || lname == "" || message == "") {
+                alert("Empty fields found. please fill in all the forms");
+            } else {
+                alert("Thank you for the feedback.");
+            }
+        }
+    </script>
+
 </body>
+
 
 </html>
