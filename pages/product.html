@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ganapati Bakers</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scrips.js"></script>
 </head>
 
 <body>
@@ -14,31 +15,32 @@
         <header class="bg-image">
             <div class="container">
                 <div id="branding">
-                    <img style="height: 70px; width: 200px;" src="../assets/images/logo.png" alt="logo" />
+                    <img src="../assets/images/logo.png" alt="logo" />
                 </div>
                 <nav>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li class="current" a href="#">Product</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li class="current"><a href="product.html">Product</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
             <!-- message and button section -->
             <section class="message">
-                <p><b style="font-size: 50px">25% Discount on Brothers Special Cake</b> <br>
-                    On the occasion of Rakshya Bandan</p>
+                <p><b style="font-size: 50px">Do you have any queries?</b> <br>
+                    Our online support is 24/7 available for your service</p>
                 <button class="shop-now">
-                    Shop Now
+                    Call Now
                 </button>
             </section>
         </header>
     </section>
-    <h1
-        style="padding-left: 50%; padding-top: 10px; padding-bottom: 10px; align-content: center; background-color: #901f45; color: white;">
-        Products</h1>
+    <div id="section">
+        <h1>Products</h1>
+        <h3>Items: <span id="count"> </span></h3>
+    </div>
     <section class="product">
         <table style="margin-left: 90px;">
             <th>Cheese Cake</th>
@@ -48,47 +50,48 @@
 
 
             <tr>
-                <td><img src="../assets/images/cheesecake.jpg" alt=""></td>
-                <td><img src="../assets/images/cake.jpg" alt=""></td>
-
-                <td><img src="../assets/images/batman.webp" alt=""></td>
-                <td><img src="../assets/images/chocolate-truffle.jpeg" alt=""></td>
-
-            </tr>
-            <tr>
-                <td>Price: Rs 100</td>
-                <td>Price: Rs 100</td>
-                <td>Price: Rs 100</td>
-                <td>Price: Rs 100</td>
+                <td><a href="productdescription.html"><img src="../assets/images/cheesecake.jpg" alt=""></a></td>
+                <td><a href="productdescription.html"><img src="../assets/images/cake.jpg" alt=""></a></td>
+                <td><a href="productdescription.html"><img src="../assets/images/batman.webp" alt="batmancake"></a></td>
+                <td><a href="productdescription.html"><img src="../assets/images/chocolate-truffle.jpeg" alt=""></a>
+                </td>
 
             </tr>
             <tr>
-                <td><button>Buy Now</button></td>
-                <td><button>Buy Now</button></td>
-                <td><button>Buy Now</button></td>
-                <td><button>Buy Now</button></td>
-            </tr>
-            <th>Black Forest Cake</th>
-            <th>Anniversary Cake</th>
-            <th>Cookies</th>
-            <th>Brown Bread</th>
-            <tr>
-                <td><img src="../assets/images/cheesecake.jpg" alt=""></td>
-                <td><img src="../assets/images/cheesecake.jpg" alt=""></td>
-                <td><img src="../assets/images/cheesecake.jpg" alt=""></td>
-                <td><img src="../assets/images/cheesecake.jpg" alt=""></td>
+                <td>Price: Rs 800</td>
+                <td>Price: Rs 1000</td>
+                <td>Price: Rs 450</td>
+                <td>Price: Rs 2000</td>
+
             </tr>
             <tr>
+                <td><button onclick="buymsg()">Buy Now</button></td>
+                <td><button onclick="buymsg()">Buy Now</button></td>
+                <td><button onclick="buymsg()">Buy Now</button></td>
+                <td><button onclick="buymsg()">Buy Now</button></td>
+            </tr>
+            <th>Vanilla Cake</th>
+            <th>Chocolava Cake</th>
+            <th>White Chocolate Cake</th>
+            <th>Barbie Cake</th>
+            <tr>
+                <td><a href="productdescription.html"><img src="../assets/images/slider/12.jpg" alt=""></a>
+                </td>
+                <td><a href="productdescription.html"><img src="../assets/images/slider/9.jpg" alt=""></a></td>
+                <td><a href="productdescription.html"><img src="../assets/images/slider/20.jpg" alt=""></a></td>
+                <td><a href="productdescription.html"><img src="../assets/images/slider/17.jpg" alt=""></a></td>
+            </tr>
+            <tr>
                 <td>Price: Rs 100</td>
                 <td>Price: Rs 100</td>
                 <td>Price: Rs 100</td>
                 <td>Price: Rs 100</td>
             </tr>
             <tr>
-                <td><button>Buy Now</button></td>
-                <td><button>Buy Now</button></td>
-                <td><button>Buy Now</button></td>
-                <td><button>Buy Now</button></td>
+                <td><button onclick="buymsg()">Buy Now</button></a></td>
+                <td><button onclick="buymsg()">Buy Now</button></td>
+                <td><button onclick="buymsg()">Buy Now</button></td>
+                <td><button onclick="buymsg()">Buy Now</button></td>
             </tr>
 
         </table>
@@ -96,17 +99,22 @@
     <footer>
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="pages/product.html">Product</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li class="current"><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="copyright">
             <p>&COPY; Ganapati Bakers Pvt. Ltd. &COPY; </p>
+            <p style="font-size: 17px;">Date/Time: <span id="datetime"></span></p>
         </div>
     </footer>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
 </body>
 
 </html>

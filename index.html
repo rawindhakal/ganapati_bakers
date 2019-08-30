@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Ganapati Bakers</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scrips.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <!-- navigation bar and logo -->
     <div class="container">
       <div id="branding">
-        <img style="height: 70px; width: 200px; padding-top: 10px;" src="assets/images/logo.png" alt="logo" />
+        <img src="assets/images/logo.png" alt="logo" />
       </div>
       <nav>
         <ul>
@@ -60,24 +61,26 @@
       </tr>
       <tr>
         <td style="text-align: center">
-          <p style="font-size: 24px">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has
-            survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of
-            Lorem Ipsum.
+          <p style="font-size: 24px" name="affirmations">
+            There is no doubt that the cake is amazing...besides, hats off to the entire team and its services.
+            You are so responsive towards customers. Thankyou so much Ganapati bakers for all your trust towards
+            customers.
+            #regardingonlinedelivery
+            <br>
+            <i>-Annar Niraula</i>
           </p>
         </td>
         <td>
-          <img src="assets/images/cake.jpg" alt="cake" height="500px" width="400px" />
+          <div style="padding: 20px; margin:20px;">
+            <img name="slide" width="500px" height="500px" style="padding-right: 30px" />
+          </div>
+          <!-- <img src="assets/images/cake.jpg" alt="cake" height="500px" width="400px" /> -->
         </td>
       </tr>
     </table>
+  </section>
+  <section>
+
   </section>
   <footer>
     <nav>
@@ -89,10 +92,17 @@
         <li><a href="pages/contactus.html">Contact Us</a></li>
       </ul>
     </nav>
+
     <div class="copyright">
       <p>&COPY; Ganapati Bakers Pvt. Ltd. &COPY; </p>
+      <p style="font-size: 17px;">Date/Time: <span id="datetime"></span></p>
     </div>
   </footer>
+  <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+  </script>
+
 </body>
 
 </html>

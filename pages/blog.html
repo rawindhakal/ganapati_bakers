@@ -38,15 +38,15 @@
         <header class="bg-image">
             <div class="container">
                 <div id="branding">
-                    <img style="height: 70px; width: 200px;" src="../assets/images/logo.png" alt="logo" />
+                    <img src="../assets/images/logo.png" alt="logo" />
                 </div>
                 <nav>
                     <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li class="current"><a href="blog.html">Blog</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,8 +60,7 @@
             </section>
         </header>
     </section>
-    <h1
-        style="padding-left: 50%; padding-top: 10px; padding-bottom: 10px; align-content: center; background-color: #901f45; color: white;">
+    <h1 id="section">
         Blog Posts</h1>
     <section class="blog">
         <div class="row">
@@ -129,6 +128,26 @@
         </div>
 
     </section>
+    <footer>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="pages/product.html">Product</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/research.html">Research</a></li>
+                <li><a href="pages/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="copyright">
+            <p>&COPY; Ganapati Bakers Pvt. Ltd. &COPY; </p>
+            <p style="font-size: 17px;">Date/Time: <span id="datetime"></span></p>
+        </div>
+    </footer>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
 
 </body>
 

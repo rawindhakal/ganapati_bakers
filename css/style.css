@@ -31,6 +31,12 @@ header #branding {
   float: left;
 }
 
+#branding img {
+  height: 70px;
+  width: 200px;
+  padding-top: 10px;
+}
+
 header li {
   display: inline;
   padding: 0 20px 0 20px;
@@ -127,43 +133,49 @@ header a:hover {
   color: white;
 }
 
+#section {
+  padding-left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-content: center;
+  background-color: #901f45;
+  color: white;
+}
+
 .affirmations {
   overflow-x: auto;
   padding-left: 15%;
 }
 
 #newsletter {
-  padding: 100px;
+  padding: 70px;
   color: #ffffff;
   background: #901f45;
 }
 
 #newsletter h1 {
   float: left;
+  padding-top: 0px;
 }
 
 #newsletter form {
   float: right;
-  margin-top: 10px;
+  justify-content: space-evenly;
 }
 
 #newsletter input[type="email"] {
-  padding: 4px;
-  height: 30px;
+  height: 40px;
   width: 250px;
-  padding-right: 10px;
-}
-
-#container2 {
-  background-color: #901f45;
+  margin-right: 10px;
 }
 
 .button_1 {
+  margin-left: 10px;
   background-color: white;
   color: #901f45;
-  border-radius: 12px;
-  font-size: 25px;
-  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 21px;
+  padding: 11px 20px;
 }
 
 footer {
@@ -210,15 +222,42 @@ footer div {
 .contactusContainer {
   display: flex;
   padding: 20px;
-  width: 100%;
+  width: 98%;
 }
 
 .map {
-  flex: 50%;
-  background-color: red;
+  flex: 33%;
+  margin-left: 5px;
 }
 
-.contactusForm {
-  flex: 50%;
+.social {
+  flex: 33%;
+  padding-left: 20px;
+}
 
+.form-container {
+  flex: 33%;
+  padding-left: 10px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 90%;
+  padding: 10px;
+}
+
+.contact-us label {
+  font-size: 22px;
+}
+
+.form {
+  padding: 15px;
+  background: #901f45;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-logo img {
+  padding: 30px;
 }
