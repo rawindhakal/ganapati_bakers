@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="description of the cakes" />
+    <meta name="keyword" content="product,cakes,blackforest,batmancake" />
+    <meta name="author" content="Rabin Dhakal" />
+    <link rel="icon" href="../assets/images/logo.png" type="image/gif" sizes="16x16">
+
+    <title>Ganapati Bakers- Batman cake</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/scrips.js"></script>
+    <style>
+        .leftcolumn {
+            flex: 25%;
+        }
+
+        .rightcolumn {
+            flex: 75%;
+            padding-left: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .blog {
+            padding: 20px;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-image">
+        <!-- navigation bar and logo -->
+        <div class="container">
+            <div id="branding">
+                <img src="../assets/images/logo.png" alt="logo" />
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="../index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- message and button section -->
+        <section class="message">
+            <p>
+                <b style="font-size: 50px">25% Discount on Brothers Special Cake</b>
+                <br />
+                On the occasion of Rakshya Bandan
+            </p>
+            <button class="shop-now">
+                Shop Now
+            </button>
+        </section>
+    </header>
+    <main>
+        <section class="blog">
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card">
+                        <img src="../assets/images/batman.webp" alt="batmandcake" height="800px" width="600px">
+                    </div>
+
+                </div>
+                <div class="rightcolumn">
+                    <div class="card">
+                        <h1>Batman Cake</h2>
+                            <h2>Price: Rs 100</h2> <br><br>
+
+                            <p>Batman themed blue Cake for the king of your life out there. Especially is
+                                recommended for the birthday of those whom you want to remind that they are king of
+                                their heart. Place your order Now. You can customized your favorite color, design, and
+                                flavor and make your order online. The cake can be delivered online, which is the best
+                                online cake delivery service in Kathmandu. Free Home Delivery*.
+
+                                All cakes are baked with hygiene and quality in the top of our priority at our own
+                                state-of-the-art baking facility and quality checked twice by our expert QC team before
+                                delivery. You can send cakes or gifts to your loved ones in Nepal or shop online for
+                                yourself in Nepal with ganapatibakers, a pioneer in online shopping in Nepal.</p> <br>
+                            <br>
+                            <label for="flavour"><b>Flavour Type:</b> </label>
+                            <select>
+                                <option value="fruit">Fruit</option>
+                                <option value="basic">Basic</option>
+                                <option value="special">Special</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="butterscotch">ButterScotch</option>
+                                <option value="vanilla">vanilla</option>
+                            </select> <br>
+                            <label for="flavourname"><b>Flavour Name:</b> </label>
+                            <select>
+                                <option value="BlackForest">BlackForest</option>
+                                <option value="WhitForest">WhitForest</option>
+                                <option value="Chocolate">Chocolate</option>
+                            </select> <br>
+                            <label for="weight">Number of Pount</label>
+                            <input type="number"> <br>
+                            <button class="shop-now">
+                                Buy Now
+                            </button>
+
+                    </div>
+
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="copyright">
+            <p>&COPY; Ganapati Bakers Pvt. Ltd. &COPY; </p>
+            <p style="font-size: 17px;">Date/Time: <span id="datetime"></span></p>
+        </div>
+    </footer>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Blog posts" />
+    <meta name="keyword" content="blog,news,recipies,new,ganapatibakers" />
+    <meta name="author" content="Rabin Dhakal" />
+    <link rel="icon" href="../assets/images/logo.png" type="image/gif" sizes="16x16">
+
+    <title>Ganapati Bakers- Blog</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        .leftcolumn {
+            flex: 75%;
+        }
+
+        .rightcolumn {
+            flex: 25%;
+            padding-left: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .blog {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header class="bg-image">
+            <div class="container">
+                <div id="branding">
+                    <img src="../assets/images/logo.png" alt="logo" />
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li class="current"><a href="blog.html">Blog</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- message and button section -->
+            <section class="message">
+                <p><b style="font-size: 50px">25% Discount on Brothers Special Cake</b> <br>
+                    On the occasion of Rakshya Bandan</p>
+                <button class="shop-now">
+                    Shop Now
+                </button>
+            </section>
+        </header>
+    </section>
+    <h1 id="section">
+        Blog Posts</h1>
+    <section class="blog">
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h1>Impact of technologies in the Business</h1>
+                    <h5>Positive and negitive impact of the technologies in the Business, Dec 7 2019</h5>
+                    <p>
+                        Technology has changed our lives, increasing the speed of time. We, as humans, have invented and
+                        developed technologies to make the best of our lives. Now technology is changing our lives every
+                        second. Robots are our new models, and at the end robots can control this world. Technology is
+                        now trying to enter our body. Innovation and technological development have changed our lives
+                        -positively and negatively. New technologies and inventions are the result of our curiosity,
+                        creativity, and problem-solving techniques. What else we will do on this earth if we do not
+                        improve ourselves each day. It is important, however, that technological development is
+                        environmentally friendly and human-friendly. <br>
+                        There are always positive as well as negitive impact of everything so there are many positive as
+                        well as negitive impact
+                        coz of technologies in our business too some of them are discussed below:
+                        <br><br>
+                        <h2>Positive Impact:</h2><br>
+                        <ul>
+                            <li>Easy promotion of the business.</li>
+                            <li>Increase in the sales.</li>
+                            <li>Easy to manage staffs and the customers.</li>
+                            <li>Faster workflow.</li>
+                            <li>Not much number of employees are needed.</li>
+                            <li>Business can be operated from the small room as well</li>
+                        </ul><br>
+                        <h2>Negitive Impact:</h2><br>
+                        <ul>
+                            <li>Loss of users data.</li>
+                            <li>Fraud users, like orders the cake and doesnot show up while delivery.</li>
+                            <li>Costly to maintain the data privecy and prevent from hacker</li>
+                            <li>Experts are required 24/7 to run the website uptime.</li>
+                            <li>Employee training cost is the big problem</li>
+                        </ul> <br>
+                        <br>
+                        All in all, technologies has many advantages over disadvantages in business like this today
+                        because it has actually allowed small-business like this and startups to equally compete with
+                        the large-corporation
+                        on the same global or local market leading to increased development on different companies.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <p>Rabin Dhakal</p>
+                    <p>+977985245651</p>
+                    <a href="mailto:rawindhakal@gmail.com">rawindhakal@gmail.com</a>
+                </div>
+                <div class="card">
+                    <h2>Follow Me</h2>
+                    <a href="https://www.facebook.com/rawindhakal/" target="_blank"><img
+                            src="../assets/images/icons8-facebook-48.png" alt="facebook" width="70" height="70">
+                    </a>
+                    <a href="https://www.instagram.com/___thevibe__/" target="_blank"><img
+                            src="../assets/images/icons8-instagram-64.png" alt="instagram" width="70" height="70">
+                    </a>
+                    <a href="https://www.twitter.com/rawindhakal/" target="_blank"><img
+                            src="../assets/images/icons8-twitter-64.png" alt="twitter" width="70" height="70">
+                    </a>
+                    <a href="https://www.messenger.com/t/rawindhakal" target="_blank"><img
+                            src="../assets/images/icons8-facebook-messenger-64.png" alt="messenger" width="70"
+                            height="70">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="copyright">
+            <p>&COPY; Ganapati Bakers Pvt. Ltd. &COPY; </p>
+            <p style="font-size: 17px;">Date/Time: <span id="datetime"></span></p>
+        </div>
+    </footer>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+
+</body>
+
+</html>
